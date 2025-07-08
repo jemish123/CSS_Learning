@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(../img/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    margin: 10px;
+    height: 100vh;
+    border-radius: 2%;
+    text-align: center;
+    position: relative;
+}
+
+.title {
+    color: white;
+    padding-top: 30px;
+    font-size: 3rem;
+}
+
+.form-section {
+    width: 75%;
+    height: 50%;
+    background-color: red;
+    position: relative;
+    display: flex;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.cover {
+    background: #252222;
+    position: absolute;
+}
+
+#cover {
+    margin:5px;
+    top: 0%;
+    height: calc(100% - 10px);
+    width: calc(50% - 10px);
+    transition: 2s;
+}
+
+.cover-content{
+    top: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.cover-btn {
+    transition: 5s;
+}
+
+#register-content {
+    background: red;
+    left: 75%;
+    display: none;
+    transition: 2.5s;
+}
+
+#login-content {
+    background: red;
+    left: 25%;
+}
+
+#login.active {    
+    left: 75%;
+}
+
+.form {
+    width: 50%;
+    height: 100%;
+}
+
+.credentials {
+    margin: 1rem;
+    padding: 1rem;
+    width: 80%;
+    border-radius: 10px;
+}
+
+#login, #registration {
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
