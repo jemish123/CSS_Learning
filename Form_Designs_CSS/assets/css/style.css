@@ -21,12 +21,11 @@ body {
 }
 
 .form-section {
-    width: 75%;
+    width: 60%;
     height: 50%;
-    background-color: red;
     position: relative;
     display: flex;
-    top: 30%;
+    top: 10%;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -41,29 +40,24 @@ body {
     top: 0%;
     height: calc(100% - 10px);
     width: calc(50% - 10px);
-    transition: 2s;
+    transition: 1s ease-in-out;
+    display: flex;
+    justify-content: center;
 }
 
-.cover-content{
-    top: 50%;
-    transform: translateX(-50%);
-    z-index: 2;
-}
-
-.cover-btn {
-    transition: 5s;
-}
-
-#register-content {
-    background: red;
-    left: 75%;
+.cover-content {
+    background: transparent;
     display: none;
-    transition: 2.5s;
 }
 
-#login-content {
-    background: red;
-    left: 25%;
+.cover-content.active{
+    margin: 10px;
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* z-index: 2; */
 }
 
 #login.active {    
