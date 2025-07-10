@@ -11,33 +11,38 @@
             <h1 class="title">Form Design Practice</h1>
             <div class="form-section">
                 <div id="login" class="form">
-                    <form action="">
-                        <input class="credentials" type="email" name="email" id="login-email" 
-                            placeholder="E-Mail"/>
-                        <br />
-                        <input class="credentials" type="password" name="password" id="login-password" 
-                            placeholder="Password"/>
-                        <br />
-                        
-                        <input type="submit" name="login" id="login-btn" 
-                            value="Sign In"/>
-                    </form>
+                    <div id="login-form">
+                        <form action="">
+                            <input class="credentials" type="email" name="email" id="login-email" 
+                                placeholder="E-Mail"/>
+                            <br />
+                            <input class="credentials" type="password" name="password" id="login-password" 
+                                placeholder="Password"/>
+                            <br />
+                            
+                            <input type="submit" name="login" id="login-btn" class="submit-btn"
+                                value="Sign In"/>
+                        </form>
+                    </div>
                 </div>
                 <div id="registration" class="form">
-                    <form action="">
-                        <input class="credentials" type="email" name="email" id="register-email" 
-                            placeholder="E-Mail"/>
-                        <br />
-                        <input class="credentials" type="password" name="password" id="register-password" 
-                            placeholder="Password"/>
-                        <br />
-                        
-                        <input type="submit" name="register" id="register-btn" 
-                            value="Sign Up"/>
-                    </form>
+                    <div id="register-form">
+                        <form action="">
+                            <input class="credentials" type="email" name="email" id="register-email" 
+                                placeholder="E-Mail"/>
+                            <br />
+                            <input class="credentials" type="password" name="password" id="register-password" 
+                                placeholder="Password"/>
+                            <br />
+                            
+                            <input type="submit" name="register" id="register-btn" class="submit-btn"
+                                value="Sign Up"/>
+                        </form>
+                    </div>
                 </div>
                 <div id="cover" class="cover">
                     <div id="login-content" class="cover cover-content">
+                        <p>Already have an account? </p>
                         <button onclick="showLoginPanel()" type="button" class="cover-btn" id="login-btn">Sign In</button>
                     </div>
                     <div id="register-content" class="cover cover-content">

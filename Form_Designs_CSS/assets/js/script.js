@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     document.getElementById("login-content").classList.toggle("active");
+    document.getElementById("login-form").style.visibility = "hidden";
 });
 
 function showLoginPanel() {
@@ -25,6 +26,10 @@ function showLoginPanel() {
     
     document.getElementById("login-content").classList.toggle("active");
     document.getElementById("register-content").classList.toggle("active");
+
+    document.getElementById("login-form").style.visibility = "visible";
+    document.getElementById("register-form").style.visibility = "hidden";
+
     
     // document.getElementById('register-content').style.zIndex = '3';
     // document.getElementById('login-content').style.zIndex = '-10';
@@ -45,8 +50,8 @@ function showRegisterPanel() {
     document.getElementById("register-content").classList.toggle("active");
     document.getElementById("login-content").classList.toggle("active");
     
-    // document.getElementById('login-content').style.zIndex = '3';
-    // document.getElementById('register-content').style.zIndex = '-10';
+    document.getElementById("register-form").style.visibility = "visible";
+    document.getElementById("login-form").style.visibility = "hidden";
 }
 
 // document.getElementById('login-btn').addEventListener("click", () => {
