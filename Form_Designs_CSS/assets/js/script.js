@@ -3,6 +3,7 @@ const cover = document.getElementById("cover");
 document.addEventListener("DOMContentLoaded", () => {
     const styleToAdd = {
         left : '0%',
+        borderRadius: '10px',
         borderTopRightRadius : '20%',
         borderBottomRightRadius : '20%'
     };
